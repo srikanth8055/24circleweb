@@ -1,0 +1,17 @@
+.maincontent{
+background-color: aqua;
+}
+
+.sidebar{
+background-color: darkcyan;
+}
+
+.ppicdiv{
+    width: 150px;
+}
+.sideheading{
+    font-family: monospace;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: underline;
+}

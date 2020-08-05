@@ -4,7 +4,7 @@
   </button>
   <a class="navbar-brand" href="#">Navbar</a>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
       <li class="nav-item"  [class.active]="router.url==='/home'" >
         <a class="nav-link" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
@@ -13,10 +13,13 @@
         <a class="nav-link" [routerLink]="['/winngo']">WinNGo</a>
       </li>
       <li class="nav-item"[class.active]="router.url==='/profile'" >
-        <a class="nav-link disabled" [routerLink]="['/profile']">Profile</a>
+        <a class="nav-link" [routerLink]="['/profile']">Profile</a>
       </li>
       <li class="nav-item" [class.active]="router.url==='/about'">
         <a class="nav-link" [routerLink]="['/about']">About</a>
+      </li>
+      <li class="nav-item"[class.active]="router.url==='/test'" >
+        <a class="nav-link disabled" [routerLink]="['/test']">test</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" style="display: none;">
@@ -25,19 +28,10 @@
     </form>
   </div>
 </nav>
-<div class="container-fluid"> 
-  <div class="row">
-    <div class="container-fluid" style="min-height: 660px;">
+<div class="container-fluid" style="min-height:660px;"> 
       <router-outlet></router-outlet>
-      
-    </div>
-  </div>
-  <div class="row" style="width: 100%;overflow: auto;">
-    <footer class="navbar navbar-dark bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; 24Circle 2020</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-  </div>
 </div>
+<footer class="navbar navbar-dark bg-dark d-flex justify-content-center" >
+  <p class="m-0 text-center text-white small"style="text-align: center;">Copyright &copy; 24Circle 2020</p>
+<!-- /.container -->
+</footer>
