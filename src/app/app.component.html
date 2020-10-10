@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myHeader">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -35,3 +35,13 @@
   <p class="m-0 text-center text-white small"style="text-align: center;">Copyright &copy; 24Circle 2020</p>
 <!-- /.container -->
 </footer>
+<script>
+$(document).ready(function(){
+});
+// Listen for new scroll events, here we debounce our `storeScroll` function
+document.addEventListener('scroll', function(){
+  alert(window.scroll)
+$(nav).css({"position":"fixed","z-index":"1"});
+});
+
+</script>   
